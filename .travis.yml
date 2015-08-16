@@ -2,7 +2,7 @@ language: bash
 sudo: true
 before_install:
   - sudo apt-get update -qq
-  - sudo apt-get install -y perl libfcgi-perl librrds-perl libcgi-fast-perl libconfig-grammar-perl libdigest-hmac-perl libio-all-lwp-perl
+  - sudo apt-get install -y smokeping
 install: 
   - wget http://oss.oetiker.ch/smokeping/pub/smokeping-2.6.8.tar.gz
   - tar -xzvf smokeping-2.6.8.tar.gz
