@@ -1,4 +1,6 @@
 language: bash
+env:
+  - LC_ALL=""
 sudo: true
 before_install:
   - sudo apt-get update -qq
