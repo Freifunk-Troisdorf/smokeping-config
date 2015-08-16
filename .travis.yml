@@ -4,7 +4,7 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -y perl libfcgi-perl librrds-perl libcgi-fast-perl libconfig-grammar-perl libdigest-hmac-perl libio-all-lwp-perl
 install: 
-  - wget http://oss.oetiker.ch/smokeping/pub/smokeping-2.6.8.tar.gz
-  - tar -xzvf smokeping-2.6.8.tar.gz
-  - cd smokeping-2.6.8 && ./configure --prefix=/home/travis/build/Freifunk-Troisdorf/smokeping-config/smokeping && make install
+  - wget http://oss.oetiker.ch/smokeping/pub/trunk/smokeping-trunk.tar.gz
+  - tar -xzvf smokeping-trunk.tar.gz
+  - cd smokeping-trunk && ./configure --prefix=/home/travis/build/Freifunk-Troisdorf/smokeping-config/smokeping && make install
 script: /usr/sbin/dhcpd -t -cf ./static-dhcp/dhcpd.conf
