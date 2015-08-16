@@ -9,9 +9,8 @@ host = fda0:747e:ab29:7405::100
 menu = Map-Server
 title = Map-Server
 host = fda0:747e:ab29:7405::21
-host = fda0:747e:ab29:7405::21
 
-++ Update1
+
 
 menu = Update1
 title = Update1
