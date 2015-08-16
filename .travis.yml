@@ -1,6 +1,8 @@
 language: bash
 sudo: true
-
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -y perl
 install: 
   - wget http://oss.oetiker.ch/smokeping/pub/smokeping-2.6.8.tar.gz
   - tar -xzvf smokeping-2.6.8.tar.gz
