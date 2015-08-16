@@ -4,5 +4,5 @@ sudo: true
 install: 
   - wget http://oss.oetiker.ch/smokeping/pub/smokeping-2.6.8.tar.gz
   - tar -xzvf smokeping-2.6.8.tar.gz
-  - cd smokeping-2.6.8.tar.gz && ../configure --prefix=/opt/smokeping && make install
+  - cd smokeping-2.6.8 && ../configure --prefix=/opt/smokeping && make install
 script: /usr/sbin/dhcpd -t -cf ./static-dhcp/dhcpd.conf
