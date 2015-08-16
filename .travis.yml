@@ -5,4 +5,4 @@ sudo: true
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -y smokeping sendmail
-script: smokeping --check --config /home/travis/build/Freifunk-Troisdorf/smokeping-config/config
+script: smokeping --config /home/travis/build/Freifunk-Troisdorf/smokeping-config/config
