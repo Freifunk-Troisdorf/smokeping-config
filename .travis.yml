@@ -5,4 +5,4 @@ sudo: true
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -y smokeping
-script: smokeping --check --config ./Freifunk-Troisdorf/smokeping-config/config
+script: smokeping --check --config /home/travis/Freifunk-Troisdorf/smokeping-config/config
