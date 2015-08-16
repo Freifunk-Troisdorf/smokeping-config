@@ -1,0 +1,35 @@
+++ troisdorf1
+
+menu = troisdorf1
+title = troisdorf1
+host = fda0:747e:ab29:7405::51
+
+++ troisdorf2
+
+menu = troisdorf2
+title = troisdorf2
+host = fda0:747e:ab29:7405::52
+
+++ troisdorf3
+
+menu = troisdorf3
+title = troisdorf3
+host = fda0:747e:ab29:7405::53
+
+++ troisdorf4
+
+menu = troisdorf4
+title = troisdorf4
+host = fda0:747e:ab29:7405::54
+
+++ troisdorf5
+
+menu = troisdorf5
+title = troisdorf5 Event Offloader 1
+host = fda0:747e:ab29:7405::55
+
+++ troisdorf6
+
+menu = troisdorf6
+title = troisdorf6 Event Offloader 2
+host = fda0:747e:ab29:7405::56

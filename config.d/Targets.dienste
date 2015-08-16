@@ -1,0 +1,6 @@
+++ pad-fftdf
+
+menu = pad-fftdf
+title = pad-fftdf
+probe = FPing
+host = 10.188.1.40

@@ -1,0 +1,10 @@
+*** Alerts ***
+to = stefan@tro-mail.de
+from = smokeping@freifunk-troisdorf.de
+
++loss
+type = loss
+# in percent
+pattern = <90%,>90%,>90%,>90%,>90%,>90%,>90%,>90%,>90%,>90%,>90%
+comment = Der Node ist anscheinend offline!
+

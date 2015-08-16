@@ -1,0 +1,392 @@
+
+*** Targets ***
+probe = FPing6
+## You have to edit and uncomment all what you want below this.
+# Please, refer to smokeping_config man page for more info
+# The given adresses aren't real to avoid DoS.
+menu = Top
+title = Network Latency Grapher
+remark = Welcome to the smokeping website.
++ Local
+menu = Local
+title = Local Network
+++ LocalMachine
+menu = Local Machine
+title = This host
+host = localhost
++ Server
+menu = Server
+title = Server im Mesh
+@include /etc/smokeping/config.d/Targets.server
++ Gateways
+menu = Gateways
+title = Gateways
+@include /etc/smokeping/config.d/Targets.gateways
++ Dienste 
+menu = Dienste-Server
+title = Dienste-Server
+@include /etc/smokeping/config.d/Targets.dienste
++ nodes_fftdf
+menu = nodes.fftdf
+title = For the domain nodes.fftdf
+alerts = loss
+++ AWO-Troisdorf-Mitte
+menu = AWO-Troisdorf-Mitte
+title = AWO-Troisdorf-Mitte
+host = fda0:747e:ab29:7405:c66e:1fff:fede:c766
+++ Akzente-1
+menu = Akzente-1
+title = Akzente-1
+host = fda0:747e:ab29:7405:c66e:1fff:fede:c75c
+++ Akzente-2
+menu = Akzente-2
+title = Akzente-2
+host = fda0:747e:ab29:7405:c66e:1fff:fede:c78a
+++ AmSteinweg42Seidel1
+menu = AmSteinweg42Seidel1
+title = AmSteinweg42Seidel1
+host = fda0:747e:ab29:7405:c66e:1fff:fec9:db16
+++ BBI-RS
+menu = BBI-RS
+title = BBI-RS
+host = fda0:747e:ab29:7405:32b5:c2ff:fe22:8fc6
+++ BSG75-Freifunk
+menu = BSG75-Freifunk
+title = BSG75-Freifunk
+host = fda0:747e:ab29:7405:32b5:c2ff:feb5:6640
+++ Backwerk-1
+menu = Backwerk-1
+title = Backwerk-1
+host = fda0:747e:ab29:7405:c66e:1fff:fede:81ca
+++ Backwerk-2
+menu = Backwerk-2
+title = Backwerk-2
+host = fda0:747e:ab29:7405:c66e:1fff:fede:80dc
+++ Bistro-Paradise
+menu = Bistro-Paradise
+title = Bistro-Paradise
+host = fda0:747e:ab29:7405:32b5:c2ff:feda:1e42
+++ Brauhaeuschen-Lohmar
+menu = Brauhaeuschen-Lohmar
+title = Brauhaeuschen-Lohmar
+host = fda0:747e:ab29:7405:eade:27ff:fef2:ebb4
+++ Butchers
+menu = Butchers
+title = Butchers
+host = fda0:747e:ab29:7405:32b5:c2ff:feb5:6bda
+++ Cafe-Broehl-1
+menu = Cafe-Broehl-1
+title = Cafe-Broehl-1
+host = fda0:747e:ab29:7405:16cc:20ff:fec2:a42c
+++ Cafe-Broehl-2
+menu = Cafe-Broehl-2
+title = Cafe-Broehl-2
+host = fda0:747e:ab29:7405:c66e:1fff:fede:fd44
+++ Cafe-Broehl-3
+menu = Cafe-Broehl-3
+title = Cafe-Broehl-3
+host = fda0:747e:ab29:7405:c66e:1fff:fede:81b4
+++ City-Kiosk
+menu = City-Kiosk
+title = City-Kiosk
+host = fda0:747e:ab29:7405:c66e:1fff:fede:816a
+++ Der-Meistershop
+menu = Der-Meistershop
+title = Der-Meistershop
+host = fda0:747e:ab29:7405:32b5:c2ff:fe22:b934
+++ Der-Waescheladen-1
+menu = Der-Waescheladen-1
+title = Der-Waescheladen-1
+host = fda0:747e:ab29:7405:c66e:1fff:fede:9cac
+++ Der-Waescheladen-2
+menu = Der-Waescheladen-2
+title = Der-Waescheladen-2
+host = fda0:747e:ab29:7405:c66e:1fff:fede:8156
+++ DocMorris-1
+menu = DocMorris-1
+title = DocMorris-1
+host = fda0:747e:ab29:7405:c66e:1fff:fede:c764
+++ DocMorris-2
+menu = DocMorris-2
+title = DocMorris-2
+host = fda0:747e:ab29:7405:c66e:1fff:fede:9f90
+++ Einzigartig-Nagel-Team
+menu = Einzigartig-Nagel-Team
+title = Einzigartig-Nagel-Team
+host = fda0:747e:ab29:7405:c66e:1fff:fede:81d2
+++ Eiscafe-Del-Corso
+menu = Eiscafe-Del-Corso
+title = Eiscafe-Del-Corso
+host = fda0:747e:ab29:7405:32b5:c2ff:feb5:68ec
+++ Eiscafe-La-Dolce-Vita
+menu = Eiscafe-La-Dolce-Vita
+title = Eiscafe-La-Dolce-Vita
+host = fda0:747e:ab29:7405:32b5:c2ff:feee:743a
+++ FF-Marienheide-Rodt-Wiesmoorweg-1
+menu = FF-Marienheide-Rodt-Wiesmoorweg-1
+title = FF-Marienheide-Rodt-Wiesmoorweg-1
+host = fda0:747e:ab29:7405:32b5:c2ff:fecb:7010
+++ Fantasie-2
+menu = Fantasie-2
+title = Fantasie-2
+host = fda0:747e:ab29:7405:16cc:20ff:fec2:3dc0
+++ Foto-Becker
+menu = Foto-Becker
+title = Foto-Becker
+host = fda0:747e:ab29:7405:c66e:1fff:fede:8126
+++ Fronhof1
+menu = Fronhof1
+title = Fronhof1
+host = fda0:747e:ab29:7405:c66e:1fff:fe7e:b54c
+++ Fronhof2
+menu = Fronhof2
+title = Fronhof2
+host = fda0:747e:ab29:7405:c66e:1fff:fe7e:b372
+++ Galerie-Troisdorf-Nord
+menu = Galerie-Troisdorf-Nord
+title = Galerie-Troisdorf-Nord
+host = fda0:747e:ab29:7405:fa1a:67ff:fe06:ddc2
+++ Galerie-Troisdorf-Rolltreppe
+menu = Galerie-Troisdorf-Rolltreppe
+title = Galerie-Troisdorf-Rolltreppe
+host = fda0:747e:ab29:7405:32b5:c2ff:feee:7658
+++ Galerie-Troisdorf-Sued
+menu = Galerie-Troisdorf-Sued
+title = Galerie-Troisdorf-Sued
+host = fda0:747e:ab29:7405:fa1a:67ff:fe06:dd90
+++ Goossens-1
+menu = Goossens-1
+title = Goossens-1
+host = fda0:747e:ab29:7405:16cc:20ff:fe63:5c16
+++ Goossens-2
+menu = Goossens-2
+title = Goossens-2
+host = fda0:747e:ab29:7405:16cc:20ff:fe63:8dd6
+++ Harzheim
+menu = Harzheim
+title = Harzheim
+host = fda0:747e:ab29:7405:32b5:c2ff:feda:1ddc
+++ Kiosk-and-more
+menu = Kiosk-and-more
+title = Kiosk-and-more
+host = fda0:747e:ab29:7405:32b5:c2ff:feee:7626
+++ Kreissparkasse-Koeln-1
+menu = Kreissparkasse-Koeln-1
+title = Kreissparkasse-Koeln-1
+host = fda0:747e:ab29:7405:32b5:c2ff:feee:71f4
+++ Loeschgruppe-Sieglar
+menu = Loeschgruppe-Sieglar
+title = Loeschgruppe-Sieglar
+host = fda0:747e:ab29:7405:6a72:51ff:fe20:a8eb
+++ M-Media
+menu = M-Media
+title = M-Media
+host = fda0:747e:ab29:7405:32b5:c2ff:feb5:6366
+++ MOKI
+menu = MOKI
+title = MOKI
+host = fda0:747e:ab29:7405:c66e:1fff:febd:320
+++ Metzgerei-Haas
+menu = Metzgerei-Haas
+title = Metzgerei-Haas
+host = fda0:747e:ab29:7405:c66e:1fff:fede:f78a
+++ Nudel
+menu = Nudel
+title = Nudel
+host = fda0:747e:ab29:7405:fa1a:67ff:feab:ec52
+++ Optik-Jonen
+menu = Optik-Jonen
+title = Optik-Jonen
+host = fda0:747e:ab29:7405:32b5:c2ff:feda:1d1c
+++ P-und-C-2
+menu = P-und-C-2
+title = P-und-C-2
+host = fda0:747e:ab29:7405:16cc:20ff:fee3:abb6
+++ P-und-C-3
+menu = P-und-C-3
+title = P-und-C-3
+host = fda0:747e:ab29:7405:16cc:20ff:fee3:a3fe
+++ Penthouse
+menu = Penthouse
+title = Penthouse
+host = fda0:747e:ab29:7405:c66e:1fff:fe3b:38a6
+++ PlatzHalter-01
+menu = PlatzHalter-01
+title = PlatzHalter-01
+host = fda0:747e:ab29:7405:eade:27ff:fefb:6163
+++ Quattro-Passi
+menu = Quattro-Passi
+title = Quattro-Passi
+host = fda0:747e:ab29:7405:32b5:c2ff:feda:1da8
+++ Rappelkiste-1
+menu = Rappelkiste-1
+title = Rappelkiste-1
+host = fda0:747e:ab29:7405:c66e:1fff:fede:fcc6
+++ Rappelkiste-2
+menu = Rappelkiste-2
+title = Rappelkiste-2
+host = fda0:747e:ab29:7405:c66e:1fff:fede:c7aa
+++ Reka
+menu = Reka
+title = Reka
+host = fda0:747e:ab29:7405:c66e:1fff:fe7e:9a24
+++ Ritter-Schuhe
+menu = Ritter-Schuhe
+title = Ritter-Schuhe
+host = fda0:747e:ab29:7405:c66e:1fff:fede:c758
+++ Schneider-junior-1
+menu = Schneider-junior-1
+title = Schneider-junior-1
+host = fda0:747e:ab29:7405:32b5:c2ff:feda:1e1e
+++ Schneider-junior-2
+menu = Schneider-junior-2
+title = Schneider-junior-2
+host = fda0:747e:ab29:7405:32b5:c2ff:feb5:6c12
+++ Schrankfund
+menu = Schrankfund
+title = Schrankfund
+host = fda0:747e:ab29:7405:6670:2ff:fefb:ece6
+++ Seestern
+menu = Seestern
+title = Seestern
+host = fda0:747e:ab29:7405:32b5:c2ff:fed9:d660
+++ Sieger-und-Sieger
+menu = Sieger-und-Sieger
+title = Sieger-und-Sieger
+host = fda0:747e:ab29:7405:32b5:c2ff:feb5:7e4e
+++ Spich-Pirat
+menu = Spich-Pirat
+title = Spich-Pirat
+host = fda0:747e:ab29:7405:12fe:edff:feaf:c876
+++ Spich-Pirat2
+menu = Spich-Pirat2
+title = Spich-Pirat2
+host = fda0:747e:ab29:7405:ea94:f6ff:fef5:7e1a
+++ TB-STRIEPE-Frei
+menu = TB-STRIEPE-Frei
+title = TB-STRIEPE-Frei
+host = fda0:747e:ab29:7405:32b5:c2ff:feb1:5a34
+++ TST-00
+menu = TST-00
+title = TST-00
+host = fda0:747e:ab29:7405:16cc:20ff:fec6:aec2
+++ TST-01
+menu = TST-01
+title = TST-01
+host = fda0:747e:ab29:7405:12fe:edff:fe75:158
+++ TST-03
+menu = TST-03
+title = TST-03
+host = fda0:747e:ab29:7405:c6e9:84ff:feb0:d652
+++ Tanz-Breuer-1
+menu = Tanz-Breuer-1
+title = Tanz-Breuer-1
+host = fda0:747e:ab29:7405:c66e:1fff:fede:81d6
+++ Tanz-Breuer-2
+menu = Tanz-Breuer-2
+title = Tanz-Breuer-2
+host = fda0:747e:ab29:7405:16cc:20ff:fec2:8cc4
+++ Tanz-Breuer-3
+menu = Tanz-Breuer-3
+title = Tanz-Breuer-3
+host = fda0:747e:ab29:7405:c66e:1fff:fede:8164
+++ Testnode-Experimental
+menu = Testnode-Experimental
+title = Testnode-Experimental
+host = fda0:747e:ab29:7405:32b5:c2ff:fe22:bb14
+++ Thueringer-Flo
+menu = Thueringer-Flo
+title = Thueringer-Flo
+host = fda0:747e:ab29:7405:32b5:c2ff:feda:1898
+++ Trauringe-und-mehr
+menu = Trauringe-und-mehr
+title = Trauringe-und-mehr
+host = fda0:747e:ab29:7405:32b5:c2ff:feda:1df6
+++ TroLUG
+menu = TroLUG
+title = TroLUG
+host = fda0:747e:ab29:7405:ea94:f6ff:fe42:ec60
+++ Troisdorfer-Hof-1
+menu = Troisdorfer-Hof-1
+title = Troisdorfer-Hof-1
+host = fda0:747e:ab29:7405:32b5:c2ff:feda:1b16
+++ Troisdorfer-Hof-2
+menu = Troisdorfer-Hof-2
+title = Troisdorfer-Hof-2
+host = fda0:747e:ab29:7405:32b5:c2ff:feda:1dc8
+++ Trowista
+menu = Trowista
+title = Trowista
+host = fda0:747e:ab29:7405:16cc:20ff:fe6e:b5dc
+++ Vierbaum-Orthopaedie
+menu = Vierbaum-Orthopaedie
+title = Vierbaum-Orthopaedie
+host = fda0:747e:ab29:7405:32b5:c2ff:feda:1096
+++ Waesche-und-Mieder-Vogel
+menu = Waesche-und-Mieder-Vogel
+title = Waesche-und-Mieder-Vogel
+host = fda0:747e:ab29:7405:32b5:c2ff:feda:1d3a
+++ Walters-Imbiss
+menu = Walters-Imbiss
+title = Walters-Imbiss
+host = fda0:747e:ab29:7405:32b5:c2ff:feda:1d6e
+++ Wild-Style
+menu = Wild-Style
+title = Wild-Style
+host = fda0:747e:ab29:7405:32b5:c2ff:feda:1d74
+++ cryptro-akku-1
+menu = cryptro-akku-1
+title = cryptro-akku-1
+host = fda0:747e:ab29:7405:16cc:20ff:fe87:1918
+++ cryptro1
+menu = cryptro1
+title = cryptro1
+host = fda0:747e:ab29:7405:eade:27ff:fe65:9f2e
+++ m4rconi01
+menu = m4rconi01
+title = m4rconi01
+host = fda0:747e:ab29:7405:b248:7aff:febe:eb12
+++ m4rconi03
+menu = m4rconi03
+title = m4rconi03
+host = fda0:747e:ab29:7405:12fe:edff:fec1:c99a
+++ magda
+menu = magda
+title = magda
+host = fda0:747e:ab29:7405:ea94:f6ff:fef5:801c
+++ magda2
+menu = magda2
+title = magda2
+host = fda0:747e:ab29:7405:16cc:20ff:fe6f:64a2
+++ point-f
+menu = point-f
+title = point-f
+host = fda0:747e:ab29:7405:c66e:1fff:febd:5d30
+++ sys-Base
+menu = sys-Base
+title = sys-Base
+host = fda0:747e:ab29:7405:32b5:c2ff:fecb:af1c
+++ sys-Freifunk
+menu = sys-Freifunk
+title = sys-Freifunk
+host = fda0:747e:ab29:7405:6a72:51ff:fe20:b07f
+++ tdf3605a6c1f506
+menu = tdf3605a6c1f506
+title = tdf3605a6c1f506
+host = fda0:747e:ab29:7405:3405:a6ff:fec1:f506
+++ testnode-beta
+menu = testnode-beta
+title = testnode-beta
+host = fda0:747e:ab29:7405:c66e:1fff:fede:f1b2
+++ trau-dich-rein-1
+menu = trau-dich-rein-1
+title = trau-dich-rein-1
+host = fda0:747e:ab29:7405:c66e:1fff:fede:c790
+++ trau-dich-rein-2
+menu = trau-dich-rein-2
+title = trau-dich-rein-2
+host = fda0:747e:ab29:7405:c66e:1fff:fede:c714
+++ PlatzHalter-02
+menu = PlatzHalter-02
+title = PlatzHalter-02
+host = fda0:747e:ab29:7405:c66e:1fff:fe3a:23be
